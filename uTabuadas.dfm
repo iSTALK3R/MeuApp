@@ -1,0 +1,89 @@
+object FrmTabuada: TFrmTabuada
+  Left = 0
+  Top = 0
+  Caption = 'Tabuada'
+  ClientHeight = 424
+  ClientWidth = 231
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblNumero: TLabel
+    Left = 24
+    Top = 8
+    Width = 121
+    Height = 18
+    Caption = 'Digite um n'#250'mero:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lstResultado: TListBox
+    Left = 24
+    Top = 60
+    Width = 185
+    Height = 257
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ItemHeight = 18
+    ParentFont = False
+    TabOrder = 0
+  end
+  object edtNumero: TEdit
+    Left = 24
+    Top = 33
+    Width = 185
+    Height = 26
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
+  object btnGerar: TButton
+    Left = 24
+    Top = 323
+    Width = 185
+    Height = 38
+    Caption = 'Gerar tabuada'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btnGerarClick
+  end
+  object btnLimpar: TButton
+    Left = 24
+    Top = 367
+    Width = 185
+    Height = 42
+    Caption = 'Limpar'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    OnClick = btnLimparClick
+  end
+end
