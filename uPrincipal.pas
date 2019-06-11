@@ -36,6 +36,7 @@ type
     Prisma1: TMenuItem;
     Cilindro1: TMenuItem;
     Image1: TImage;
+    Ajuda1: TMenuItem;
     procedure Sair1Click(Sender: TObject);
     procedure Calculadora1Click(Sender: TObject);
     procedure Navegador1Click(Sender: TObject);
@@ -52,6 +53,7 @@ type
     procedure Produtos1Click(Sender: TObject);
     procedure Pedidos1Click(Sender: TObject);
     procedure Sobre1Click(Sender: TObject);
+    procedure Ajuda1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -66,7 +68,7 @@ implementation
 {$R *.dfm}
 
 uses uCalendario, uIMC, uCadastroCliente, uTabuadas, uVolcone, uVolpr, uVolumec,
-  uTriangulo, uCadastroProdutos, uPedidos, uSobre;
+  uTriangulo, uCadastroProdutos, uPedidos, uSobre, uAjuda;
 
 procedure TFrmPrincipal.abuada1Click(Sender: TObject);
 begin
@@ -75,6 +77,15 @@ begin
     Application.CreateForm(TFrmTabuada,FrmTabuada);
   end;
   FrmTabuada.Show;
+end;
+
+procedure TFrmPrincipal.Ajuda1Click(Sender: TObject);
+begin
+  if (FrmAjuda = nil) then
+  begin
+    Application.CreateForm(TFrmAjuda,FrmAjuda);
+  end;
+  FrmAjuda.Show;
 end;
 
 procedure TFrmPrincipal.Calculadora1Click(Sender: TObject);
